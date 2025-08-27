@@ -50,7 +50,7 @@ Certifique-se de que tem o Python 3 instalado. As bibliotecas necessárias estã
 
 ### Fazendo uma Previsão
 
-Para prever o resultado de um jogo, pode usar o script `previsao_de_resultados_do_brasileirao`. Abra o ficheiro, insira as odds da Pinnacle para a partida desejada e execute-o.
+Para prever o resultado de um jogo, pode usar o script `previsao_de_resultados_do_brasileirao`. Abra o excel 'CALCULO ODDS JOGOS' , insira as odds da Pinnacle e de outras casas de aposta na aba 'CALCULADORA' para a partida desejada, aperte 'executar' e depois insira os dados dentro do código e execute-o.
 
 ```python
 # Dentro de previsao_de_resultados_do_brasileirao
@@ -58,12 +58,20 @@ Para prever o resultado de um jogo, pode usar o script `previsao_de_resultados_d
 # 1. Encontre as odds da Pinnacle para o jogo.
 # 2. Substitua os valores de exemplo abaixo.
 
-odds_time_da_casa = 2.50  # Ex: Vasco
-odds_empate = 3.40
-odds_time_visitante = 2.80  # Ex: Botafogo
+    'Date': ['24/07/2025'],
+    'Home': ['Vitoria'],
+    'Away': ['Sport Recife'],
+    'PSCH': [2.43],  # Odd mandante da Pinnacle
+    'PSCD': [3],  # Odd empaate da Pinnacle
+    'PSCA': [3.57],  # Odd visitante e da Pinnacle
+    'MaxCH': [2.42], # Maxima odd do time mandante
+    'MaxCD': [3.01], # Maxima odd de empatar
+    'MaxCA': [3.5], # Maxima odd do time visitante
+    'AvgCH': [2.365556], # Média das odds do mandante
+    'AvgCD': [2.95], # Média das odds de empate
+    'AvgCA': [3.362222], # Média das odds do visitante
 
 # 3. Execute o script e veja o resultado no terminal
-# python prever_jogo.py
 ```
 
 O script irá carregar os dados, treinar o modelo e imprimir uma análise detalhada da partida com as probabilidades calculadas.
