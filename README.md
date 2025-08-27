@@ -3,7 +3,6 @@ Projeto de Machine Learning para prever resultados de jogos do Campeonato Brasil
 
 # Previsão de Resultados do Campeonato Brasileiro
 
-![Data-Football](https://www.football-data.co.uk/brazil.php)
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)
 
